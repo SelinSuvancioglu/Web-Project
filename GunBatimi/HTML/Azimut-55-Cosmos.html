@@ -58,11 +58,10 @@
                     <table>
                         <tr><th></th></tr>
                     </table>
-                    <div class="deneme"> 
-                    <div class="NavigationList">
+                    <div class="Facilities-list">
                         <!-- <br><br><br> -->
                         <h4>Navigasyon ve güvenlik</h4>
-                        <ul id="Facilities-list">
+                        <ul>
                             <li id="no">Jeneratör</li>
                             <li id="no">Pruva pervanesi</li>
                             <li>Bimini tente</li>
@@ -74,7 +73,7 @@
                             <li>Otopilot</li>
                         </ul>
                     </div>
-                    <div class="Kamara">
+                    <div class="Facilities-list">
                         <!-- <br><br><br> -->
                         <h4>Salon ve kamaralar</h4>
                         <ul>
@@ -88,7 +87,7 @@
                             <li>Lavabo</li>
                         </ul>
                     </div>
-                    <div class="entertainment">
+                    <div class="Facilities-list">
                         <!-- <br><br><br> -->
                         <h4>Eğlence</h4>
                         <ul>
@@ -100,65 +99,25 @@
                             <li>Güneşlenme yatakları</li>
                         </ul>
                     </div>
-                </div>
                 </article>
-                <section class="section-Facilities">
-                    <div class="row">
-                        <div class="Facilities-column">
-                            <h4>Navigasyon ve güvenlik</h4>
-                            <ul id="Facilities-list">
-                                <li id="no">Jeneratör</li>
-                                <li id="no">Pruva pervanesi</li>
-                                <li>Bimini tente</li>
-                                <li>Salon GPS plotter</li>
-                                <li>İç mekan GPS pilotlayıcı</li>
-                                <li>Dingi</li>
-                                <li>Tik güverte</li>
-                                <li>Flybridge</li>
-                                <li>Otopilot</li>
-                            </ul>
-                        </div>
-                        <div class="Facilities-4-column">
-                            <h4>Salon ve kamaralar</h4>
-                            <ul>
-                                <li>Isıtıcı</li>
-                                <li>Klima</li>
-                                <li>Ocak</li>
-                                <li>Mutfak malzemeleri</li>
-                                <li>Yastıklar ve battaniyeler</li>
-                                <li>Buzdolabı</li>
-                                <li>Duş</li>
-                                <li>Lavabo</li>
-                            </ul>
-                        </div>
-                        <div class="Facilities-column">
-                            <h4>Eğlence</h4>
-                            <ul>
-                                <li>Yüzme platformu</li>
-                                <li>Kokpit hoparlörleri</li>
-                                <li>Düz ekran TV</li>
-                                <li>Güverte hoparlörler</li>
-                                <li>Ses sistemi</li>
-                                <li>Güneşlenme yatakları</li>
-                            </ul>
-                        </div>
-                      </div>
-                      <!-- <div class="buton-area">
-                        <a class="buton" href="../HTML/index.html">Yatlar ve guletler</a>
-                      </div> -->
-                  </section>
                 <h2 class="Text">Galeri</h2>
                 <article class="Gallery">
                     <div class="gallery-plan">
-                        <img src="../pictures/Azimut-55-Cosmos/0.jpg" alt="1" class="photo">
-                        <img src="../pictures/Azimut-55-Cosmos/1.jpg" alt="2" class="photo">
-                        <img src="../pictures/Azimut-55-Cosmos/2.jpg" alt="3" class="photo">
-                        <img src="../pictures/Azimut-55-Cosmos/3.jpg" alt="4" class="photo">
-                        <img src="../pictures/Azimut-55-Cosmos/4.jpg" alt="6" class="photo">
-                        <img src="../pictures/Azimut-55-Cosmos/5.jpg" alt="7" class="photo">
-                        <img src="../pictures/Azimut-55-Cosmos/6.jpg" alt="8" class="photo">
-                        <img src="../pictures/Azimut-55-Cosmos/7.jpg" alt="9" class="photo">
+                        <img src="../pictures/Azimut-55-Cosmos/0.jpg" alt="1" class="photo" onclick="openModal(this)">
+                        <img src="../pictures/Azimut-55-Cosmos/1.jpg" alt="2" class="photo" onclick="openModal(this)">
+                        <img src="../pictures/Azimut-55-Cosmos/2.jpg" alt="3" class="photo" onclick="openModal(this)">
+                        <img src="../pictures/Azimut-55-Cosmos/3.jpg" alt="4" class="photo" onclick="openModal(this)">
+                        <img src="../pictures/Azimut-55-Cosmos/4.jpg" alt="6" class="photo" onclick="openModal(this)">
+                        <img src="../pictures/Azimut-55-Cosmos/5.jpg" alt="7" class="photo" onclick="openModal(this)">
+                        <img src="../pictures/Azimut-55-Cosmos/6.jpg" alt="8" class="photo" onclick="openModal(this)">
+                        <img src="../pictures/Azimut-55-Cosmos/7.jpg" alt="9" class="photo" onclick="openModal(this)">
 
+                        <div id="myModal" class="modal">
+                            <span class="close" onclick="closeModal()">&times;</span>
+                            <div class="modal-content">
+                                <img id="modalImage" src="" alt="Büyük Resim">
+                            </div>
+                        </div>
                     </div>
                 </article>
                 <h2 class="Text">Ödeme</h2>
@@ -245,5 +204,7 @@
                     <a href="../HTML/Contact.html">İletişim</a>
                 </div>
             </footer>
+            <script src="../JS/GalleryControl.js"></script>
+
         </body>
     </html>

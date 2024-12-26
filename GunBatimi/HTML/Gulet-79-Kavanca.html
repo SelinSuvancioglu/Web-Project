@@ -54,16 +54,14 @@
                         </table>
                     </div>
                 </article>
+                <br>
                 <h2 class="Text">İmkanlar</h2>
                 <article class="Facilities">
-                    <table>
-                        <tr><th></th></tr>
-                    </table>
-                    <div class="deneme"> 
-                    <div class="NavigationList">
+
+                    <div class="Facilities-list">
                         <!-- <br><br><br> -->
                         <h4>Navigasyon ve güvenlik</h4>
-                        <ul id="Facilities-list">
+                        <ul>
                             <li>Jeneratör</li>
                             <li id="no">Pruva pervanesi</li>
                             <li>Bimini tente</li>
@@ -75,7 +73,7 @@
                             <li>Otopilot</li>
                         </ul>
                     </div>
-                    <div class="Kamara">
+                    <div class="Facilities-list">
                         <!-- <br><br><br> -->
                         <h4>Salon ve kamaralar</h4>
                         <ul>
@@ -89,7 +87,7 @@
                             <li>Lavabo</li>
                         </ul>
                     </div>
-                    <div class="entertainment">
+                    <div class="Facilities-list">
                         <!-- <br><br><br> -->
                         <h4>Eğlence</h4>
                         <ul>
@@ -101,19 +99,25 @@
                             <li>Güneşlenme yatakları</li>
                         </ul>
                     </div>
-                </div>
                 </article>
+                <br>
                 <h2 class="Text">Galeri</h2>
                 <article class="Gallery">
                     <div class="gallery-plan">
-                        <img src="../pictures/Gulet-79-Kavanca/1.jpg" alt="1" class="photo">
-                        <img src="../pictures/Gulet-79-Kavanca/2.jpg" alt="2" class="photo">
-                        <img src="../pictures/Gulet-79-Kavanca/3.jpg" alt="3" class="photo">
-                        <img src="../pictures/Gulet-79-Kavanca/4.jpg" alt="4" class="photo">
-                        <img src="../pictures/Gulet-79-Kavanca/5.jpg" alt="6" class="photo">
-                        <img src="../pictures/Gulet-79-Kavanca/6.jpg" alt="7" class="photo">
-                        <img src="../pictures/Gulet-79-Kavanca/7.jpg" alt="8" class="photo">
-                        <img src="../pictures/Gulet-79-Kavanca/8.jpg" alt="9" class="photo">
+                        <img src="../pictures/Gulet-79-Kavanca/1.jpg" alt="1" class="photo" onclick="openModal(this)">
+                        <img src="../pictures/Gulet-79-Kavanca/2.jpg" alt="2" class="photo" onclick="openModal(this)">
+                        <img src="../pictures/Gulet-79-Kavanca/3.jpg" alt="3" class="photo" onclick="openModal(this)">
+                        <img src="../pictures/Gulet-79-Kavanca/4.jpg" alt="4" class="photo" onclick="openModal(this)">
+                        <img src="../pictures/Gulet-79-Kavanca/5.jpg" alt="6" class="photo" onclick="openModal(this)">
+                        <img src="../pictures/Gulet-79-Kavanca/6.jpg" alt="7" class="photo" onclick="openModal(this)">
+                        <img src="../pictures/Gulet-79-Kavanca/7.jpg" alt="8" class="photo" onclick="openModal(this)">
+                        <img src="../pictures/Gulet-79-Kavanca/8.jpg" alt="9" class="photo" onclick="openModal(this)">
+                    </div>
+                    <div id="myModal" class="modal">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <div class="modal-content">
+                            <img id="modalImage" src="" alt="Büyük Resim">
+                        </div>
                     </div>
                 </article>
                 <h2 class="Text">Ödeme</h2>
@@ -199,5 +203,7 @@
                     <a href="../HTML/Contact.html">İletişim</a>
                 </div>
             </footer>
+            <script src="../JS/GalleryControl.js"></script>
+
         </body>
     </html>

@@ -5,6 +5,10 @@
 h2, h1{
   color:rgb(0, 102, 190);
 }
+
+h2{
+  margin: 30px;
+}
 h4,h3{
   color:rgb(0, 58, 109);
 
@@ -59,6 +63,7 @@ main{
   margin-bottom: -20px;
 }
 
+
 .Text{
   left: 5px;
   margin-left: 9px;
@@ -112,7 +117,7 @@ th{
   border-right: 2px solid rgb(11, 0, 71);
 } */
 .Facilities{
-  display: none;
+  display: flex; 
   justify-content: center;
   width: 100%;
   flex-direction: row;
@@ -123,19 +128,14 @@ th{
   /* background-color: white; */
   /* left: 20%; */
 }
-.deneme{
-  display: flex;
-  left: 50%;
-  margin-top: -20px;
-}
-.Facilities-column {
-  float: left;
-  width: 33%;
-  padding: 15px; 
-  /* flex: 1;
-  margin: 0 8px;
-  display: flex;
-  flex-direction: row; */
+
+.Facilities-list {
+  flex: 1; /* Her bir kutuyu eşit genişlikte yap */
+  margin: 0 30px; /* Aralarında boşluk bırak */
+  text-align: center;
+  padding: 30px;
+  /* background-color: #f4f4f4; */
+  /* border: 1px solid #ccc; */
 }
 
 .explanation{
@@ -309,7 +309,14 @@ footer{
 }
 .gallery-plan{
   margin-left: 10%;
+  margin-right: 5%;
 }
+
+.gallery-plan img{
+  cursor: pointer;
+  object-fit: cover;
+}
+
 .broker-profile{
   width: 200px;
   height: auto;
@@ -345,3 +352,35 @@ footer{
 /* .Dinghy{
   list-style-image: url('../pictures/icon-png/Dinghy2.png');
 }  */
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 80%;
+}
+
+.modal img {
+  width: auto;
+  height: 85%;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
