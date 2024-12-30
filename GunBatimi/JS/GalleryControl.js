@@ -1,4 +1,26 @@
 
+// Tüm <img> etiketlerini seç
+const imgElements = document.querySelectorAll('img.photo');
+
+// src'leri bir array'e ekle
+const imageArray = Array.from(imgElements).map(img => img.src);
+
+console.log(imageArray);
+
+let currentIndex = 0;
+
+function nextImage() {
+    currentIndex = (currentIndex + 1) % imageArray.length;
+    const modalImage = document.getElementById('modalImage');
+    modalImage.src = imageArray[currentIndex];
+}
+
+function prevImage() {
+    currentIndex = (currentIndex - 1 + imageArray.length) % imageArray.length;
+    const modalImage = document.getElementById('modalImage');
+    modalImage.src = imageArray[currentIndex];
+}
+
 // Galeri açan fonksiyon
 function openModal(imgElement) {
     var modal = document.getElementById("myModal");
